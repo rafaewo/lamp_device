@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+
+      <div class="logo">
+        <h1><%= title %></h1>
+      </div>
+
+      <div class="form">
+        <form action="/add" method="post">
+          <input type="text" name="name" placeholder="Nome da lâmpada">
+          <button type="submit">+ adicionar</button>
+        </form>
+      </div>
+
+    </header>
+    
+    <p class="legend">Gerencie suas lâmpadas: </p>
+    
+    <div class="manage">
+      <% for(var i=0; i < status.length; i++) { %>
+      <div class="card">
+        <img src="/images/<%= status[i].status %>.jpg" >
+        <span> <%= status[i].name %> </span>
+        <a href="/turn/<%= status[i]._id %>" >on/off</a>
+        <!-- <a href='/del/<%= status[i]._id %>'>delete</a> -->
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>

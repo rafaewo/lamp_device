@@ -1,0 +1,67 @@
+body {
+  margin: 0 auto;
+  font: 14px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #222;
+  color: #ddd;
+}
+
+.logo {
+  margin: 5px;
+}
+
+.form {
+  margin: 5px;
+  align-self: center;
+}
+
+.legend {
+  margin: 15px 10px;
+  font-size: 20px;
+}
+
+.manage {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px;
+}
+
+.card {
+  width: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  border: #ccc 1px solid;
+  border-radius: 5px;
+  transform: none;
+  transition: all 100ms;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #fff;
+}
+
+a {
+  margin-top: 5px;
+  color: #555;
+}
+
+img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+span {
+  text-align: center;
+}
